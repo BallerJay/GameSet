@@ -1,0 +1,79 @@
+.wrap {
+  width: 320px;
+  height: 568px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.wrap > .startGame {
+  width: 100%;
+  height: 100%;
+  background: url('../image/ks.png') center no-repeat;
+  background-size: contain;
+  position: relative;
+}
+
+.startGame > span {
+  width: 160px;
+  height: 40px;
+  display: block;
+  background-color: rgba(196, 201, 202, alpha);
+  border: 3px solid #666;
+  box-sizing: border-box; /*怪异盒模型*/
+  text-align: center;
+  line-height: 34px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 180px;
+  cursor: pointer;
+}
+.startGame > span:hover {
+  color: #fff;
+}
+.startGame > p{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 150px;
+}
+
+.enterGame {
+  width: 100%;
+  height: 100%;
+  background: url('../image/background_1.png');
+  background-size: contain;
+  position: relative;
+  display: none;
+}
+.myPlane {
+  width: 66px;
+  height: 80px;
+  position: absolute;
+  left: 127px;
+  /* transform: translateX(-50%); 如果添加上此代码会出现bug*/
+  bottom: 0;
+}
+
+.bullets,.enemys {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* 模拟子弹的位置 */
+.bullets > .bullet {
+  position: absolute;
+}
+.scores {
+  text-align: right;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  padding: 0 20px;
+  transform: translateZ(1px);
+}
